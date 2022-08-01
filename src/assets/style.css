@@ -1,0 +1,203 @@
+.Homescreen .header {
+    background: url("images/homeScreen.jpg");
+    background-repeat: repeat;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+    height: 100px;
+    z-index: 3;
+    box-shadow: 0px 0px 8px 1px #353535;
+}
+.Homescreen .header .logo img {
+    max-width: 100px;
+    width: 6em;
+}
+.Homescreen .home_body {
+    padding-top: 100px;
+}
+.Homescreen .home_body .banner img.banner1{
+    max-width: 100%;
+}
+.padding_left{
+    padding-left: 45vh;
+}
+.Homescreen .home_body .home_video video{
+    max-width: 100%;
+}
+.Homescreen .buttons{
+    background-image: url("images/banner5.png");
+    min-height: 520px;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Homescreen .buttons div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 100px;
+}
+.Homescreen .buttons a {
+    font-size: 28px;
+    background: linear-gradient(45deg, #007bff, #000000);
+    color: #fff;
+    display: block;
+    line-height: 90px;
+    height: 90px;
+    width: 250px;
+    font-weight: 900;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px -2px #7f7e7e;
+}
+.Homescreen .buttons a:hover{
+    text-decoration: none;
+    box-shadow: 0px 2px 5px -2px #000;
+}
+.login_page {
+    background-image: url("images/login_bg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login_page .form {
+    background: linear-gradient(45deg, #8eb6e924, #000000cf);
+    width: 50%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px -3px #ffffff;
+}
+.login_page .form h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.login_page .form .form-control {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
+.login_page .form .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.login_page .form input::placeholder{
+    color: rgba(255, 255, 255, 0.425);
+}
+.footer {
+    border-top: 2px solid #efb65c;
+}
+.footer .logo{
+    position: relative;
+}
+.footer .logo img{
+    position: absolute;
+    max-width: 200px;
+    width: 8%;
+    padding: 10px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home_body .center-content{
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.home_body .gifs{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    position: relative;
+    background: #8eb6e9;
+    color: #333;
+}
+.welcome_text img{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home_body .gifs div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -moz-animation: scroll-up 2s linear infinite;
+    -webkit-animation: scroll-up 2s linear infinite;
+    animation: scroll-up 20s linear infinite;
+}
+@-moz-keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-up {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@keyframes scroll-up {
+    0% {
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+.sidePanel{
+    height: calc(100vh - 100px);
+    border-top: 83vh solid #f9dfb6;
+    border-right: 83vh solid transparent;
+    height: 0;
+    width: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.sidePanel_img img{
+    width: 45vh;
+    left: 0%;
+    top: 13%;
+    position: absolute;
+    z-index: 2;
+}
